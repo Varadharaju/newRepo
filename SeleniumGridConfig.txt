@@ -1,0 +1,26 @@
+Selenium Grid
+
+1. Have the Hubconfig json ready
+2. Navigate to cmd and give the command java -jar selenium-server-standalone-3.13.0.jar -role hub -hubConfig hubconfig.json
+3. Congifure the node json 
+
+java -Dwebdriver.chrome.driver="chromedriver.exe" -Dwebdriver.ie.driver="IEDriverServer.exe" -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.13.0.jar -role node -nodeConfig nodeconfig.json
+
+java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.13.0.jar -role node -nodeConfig nodeconfig.json
+
+
+{
+  "browserName": "firefox",
+  "maxInstances": 5,
+  "seleniumProtocol": "WebDriver"
+},
+{
+  "browserName": "chrome",
+  "maxInstances": 5,
+  "seleniumProtocol": "WebDriver"
+},
+{
+  "browserName": "internet explorer",
+  "maxInstances": 1,
+  "seleniumProtocol": "WebDriver"
+}

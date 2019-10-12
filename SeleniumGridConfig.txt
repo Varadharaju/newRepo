@@ -19,8 +19,9 @@ java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalon
   "maxInstances": 5,
   "seleniumProtocol": "WebDriver"
 },
-{
-  "browserName": "internet explorer",
+{iak
   "maxInstances": 1,
   "seleniumProtocol": "WebDriver"
 }
+
+Making changes to the file......
